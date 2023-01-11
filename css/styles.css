@@ -31,7 +31,8 @@ margin-right: auto;
 outline: 2px solid teal;
 }
 
-.header a {padding-top: 24px;
+.header a {
+padding-top: 24px;
 padding-bottom: 24px;}
 
 .hidden-title {position: absolute;
@@ -46,9 +47,15 @@ padding-bottom: 24px;}
     clip: rect(0 0 0 0);
     overflow: hidden;}
 
-/* .header { }
-.header-navigation {}
-.header-site-list {} */
+.header { }
+.header-navigation {display: flex;
+align-items: center;}
+
+.header-site-list {display: flex;
+gap: 40px;}
+
+.header-container {display: flex;
+align-items: center;}
 
 /* Лого */
 
@@ -58,7 +65,8 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
 letter-spacing: 0.03em;
-text-transform: uppercase;}
+text-transform: uppercase;
+margin-right: 70px;}
 
 .web-logo {color: var(--accent-color)}
 
@@ -92,22 +100,31 @@ color: var(--main-text-color);}
 .header-adress-link:focus,
 .header-adress-link:active {color: var(--accent-color)}
 
-/* .header-nav-list {}
+.header-nav-list {display: flex;
+gap: 40px;
+}
+
+.header-adress {margin-left: auto;}
+
 .header-mail {}
-.header-tel {} */
+.header-tel {}
 
 /* Назва сайту */
 
 .hero {background-color: var(--second-text-color);
-text-align: center;
+    text-align: center;
 padding-top: 188px;
-padding-bottom: 188px;}
+padding-bottom: 188px;
+}
 
 .hero-title {font-size: 56px;
 line-height: 1.07;
 letter-spacing: var(--typical-letter-spacing);
 color: var(--main-white-color);
-margin-bottom: 32px;}
+margin-bottom: 32px;
+margin-left: auto;
+margin-right: auto;
+max-width: 496px;}
 
    /* Кнопка замовлення */
 
@@ -119,6 +136,8 @@ margin-bottom: 32px;}
     color: var(--main-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;}
 
 .hero-button:hover,
@@ -131,8 +150,9 @@ margin-bottom: 32px;}
 padding-bottom: 120px;}
 
 
-.features-list {}
-.features-item {}
+.features-list {display: flex;}
+.features-item {margin-right: 24px;}
+.features-item:not(:last-child {})
 
 .features-title {font-weight: 500;
     font-size: 20px;
@@ -143,7 +163,8 @@ padding-bottom: 120px;}
 
 .features-paragraph {font-size: 16px;
     line-height: var(--typical-line-height);
-    letter-spacing: var(--typical-letter-spacing);}
+    letter-spacing: var(--typical-letter-spacing);
+width: 264px;}
 
 /* Що ми робимо */
 

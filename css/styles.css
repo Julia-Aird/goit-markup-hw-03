@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;}
 
 ul {margin: 0; padding-left: 0;}
 
-img {display: block;}
+img {display: block;
+max-width: 100%;
+height: auto;}
 
 .list {list-style: none;}
 
@@ -53,8 +55,7 @@ padding-bottom: 24px;}
 .header-navigation {display: flex;
 align-items: center;}
 
-.header-site-list {display: flex;
-gap: 40px;}
+.header-site-list {display: flex;}
 
 .header-container {display: flex;
 align-items: center;

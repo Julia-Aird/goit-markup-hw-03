@@ -159,9 +159,11 @@ padding-bottom: 120px;}
 
 .features-list {display: flex;}
 
-.features-item:not(:last-child) {
-    margin-right: 24px;
-}
+.features-item {margin-right: 24px;}
+
+.features-item {flex-basis: calc((100% - 72px) / 4);}
+
+.features-item:nth-child(4n + 4) {margin-right: 0;}
 
 .features-title {font-weight: 500;
     font-size: 20px;
@@ -172,31 +174,27 @@ padding-bottom: 120px;}
 
 .features-paragraph {font-size: 16px;
     line-height: var(--typical-line-height);
-    letter-spacing: var(--typical-letter-spacing);
-width: 264px;}
+    letter-spacing: var(--typical-letter-spacing);}
 
 /* Що ми робимо */
-
 
 .work {padding-bottom: 120px;}
 
 .work-title, .team-title {font-size: 36px;
+    text-align: center;
     line-height: 1.11;
     letter-spacing: var(--typical-letter-spacing);
-    color: var(--second-text-color);
-text-align: center;}
+    color: var(--second-text-color);}
 
 .work-title {margin-bottom: 72px;}
     
-    .work-list {display: flex;
-    }
+.work-list {display: flex;}
 
-    .work-item {margin-right: 24px;}
+.work-item {margin-right: 24px;}
 
 .work-item:nth-child(3n + 3) {margin-right: 0;}
 
-.work-item {flex-basis: calc((100% - 4px) / 3);}
-
+.work-item {flex-basis: calc((100% - 48px) / 3);}
 
 /* Наша команда  */
 
@@ -204,12 +202,19 @@ text-align: center;}
 padding-top: 120px;
 padding-bottom: 120px;}
 
+.team-list {display: flex;}
+
 .team-title {margin-bottom: 72px;}
 
 .team-container {padding: 32px 16px;;
 text-align: center;}
 
+.team-item {background-color: var(--main-white-color);
+margin-right: 24px;}
+    
+.team-item:nth-child(4n+4) {margin-right: 0;}
 
+.team-item {flex-basis: calc((100% - 72px) / 4);}
 
 .team-name, .examples-title {font-weight: 500;
     font-size: 20px;
@@ -217,18 +222,14 @@ text-align: center;}
     letter-spacing: var(--typical-letter-spacing);
     color:var(--second-text-color);}
 
-    .team-name {margin-bottom: 8px;}
-
-    .team-item {flex-basis: calc((100% - 72px) / 4);}
+.team-name {margin-bottom: 8px;}
 
 .examples-list {display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    column-gap: 24px;
-}
+    column-gap: 24px;}
 
 .examples-item {flex-basis: calc((100% - 48px) / 3);}
-
 
 .examples-container {padding-top: 32px;
 padding-bottom: 32px;
@@ -237,25 +238,12 @@ border-bottom: 1px solid var(--corn-color);
 border-left: 1px solid var(--corn-color);
 border-right: 1px solid var(--corn-color);}
 
-
 .examples-title {margin-bottom: 8px;}
-
 
 .team-subtitle, .examples-subtitle {font-size: 16px;
 color: var(--main-text-color);
 line-height: var(--typical-line-height);
 letter-spacing: var(--typical-letter-spacing);}
-
-.team-list {display: flex;}
-
-.team-container {padding: 32px 16px;}
-
-.team-name {margin-bottom: 8px;}
-
-.team-item {background-color: var(--main-white-color);
-margin-right: 24px;}
-
-.team-item:nth-child(4n+4) {margin-right: 0;}
 
 /* Футер */
 
@@ -288,9 +276,6 @@ width: 264px;}
 margin-bottom: 72px;
 justify-content: center;}
 
-
-
-    
 .services {padding-top: 96px;
 padding-bottom: 120px;}
 
@@ -304,7 +289,7 @@ padding-bottom: 120px;}
     cursor: pointer;
     border: 1px solid var(--corn-color);
     border-radius: 4px;
-padding: 12px 24px;}
+    padding: 12px 24px;}
 
 .services-item:not(:last-child) {margin-right: 24px;}    
 

@@ -30,8 +30,7 @@ padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
-outline: 2px solid teal;
-}
+outline: 2px solid teal;}
 
 .header a {
     display: block;
@@ -50,12 +49,14 @@ padding-bottom: 24px;}
     clip: rect(0 0 0 0);
     overflow: hidden;}
 
-.header { }
+/* .header { } */
 
 .header-navigation {display: flex;
 align-items: center;}
 
 .header-site-list {display: flex;}
+
+.header-item:not(:last-child) {margin-right: 40px;}
 
 .header-container {display: flex;
 align-items: center;
@@ -104,15 +105,13 @@ color: var(--main-text-color);}
 .header-adress-link:focus,
 .header-adress-link:active {color: var(--accent-color)}
 
-.header-nav-list {display: flex;
-}
+.header-nav-list {display: flex;}
 
 .header-adress {margin-left: auto;}
 
-.header-item:not(:last-child) {margin-right: 40px;}
-
 .header-mail {margin-right: 40px;}
-.header-tel {}
+
+/* .header-tel {} */
 
 /* Назва сайту */
 
